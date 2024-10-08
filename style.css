@@ -1,0 +1,490 @@
+/* ============================================ common css starts ========================================================== */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* background: url(/images/galaxy.avif);
+    background-position: center; */
+    animation: bodyanimat 4s linear infinite;
+}
+/* @keyframes bodyanimat{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+} */
+.name{
+    font-size: 18px;
+    font-weight: 900;
+    color: white;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* ============================================ sun starts ========================================================== */
+.sunParent{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 49%;
+    top: 49%;
+    transform: translate(-34%, -41%);
+}
+.sunParent .name {
+    left: -30%;
+    top: 44%;
+    font-size: 47px;
+}
+.sun {
+    height: 100px;
+    width: 100px;
+    background: url(images/sun.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-size: 143px 135%;
+    box-shadow: 0px 0px 66px 60px rgba(238, 79, 11, 0.614);
+    animation: rotate1 20s infinite linear;
+} 
+@keyframes rotate1 {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+      
+    }
+}
+
+/* ============================================ mercury starts ========================================================== */
+.mercuryOrbit .name {
+    left: -143%;
+    top: -85%;
+}
+
+.mercuryOrbit{
+    width: 150px;
+    height: 150px;
+    animation: orbit1 20s linear infinite;
+}
+@keyframes orbit1{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+       transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.mercury {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: linear-gradient(#e7e8ff, #9999e5, #a1c7ff, #b5a7a7);
+    position: absolute;
+    top: 2%;
+    left: 33%;
+    animation: rotatemercury 10s linear infinite;
+}
+@keyframes rotatemercury{
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+     100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    } 
+} 
+
+/* ============================================ orbit common css starts ========================================================== */
+.mercuryOrbit,
+.venusOrbit,
+.earthOrbit,
+.marsOrbit,
+.jupitarOrbit,
+.saturnOrbit,
+.urenusOrbit,
+.neptuneOrbit {
+    border-top: 1px dotted rgb(135, 135, 135);
+    /* border: 2px dotted rgb(49, 49, 49); */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: transparent;
+}
+
+/* ============================================ venus starts ========================================================== */
+.venusOrbit .name {
+    left: -52%;
+    top: -71%;
+}
+
+.venusOrbit{
+    height: 210px;
+    width: 210px;
+    animation: orbit2 20s linear infinite;
+}
+@keyframes orbit2{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+       transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.venus {
+    width: 29px;
+    height: 29px;
+    background: linear-gradient(#fc7302, #fdcf46dd, #fc801a, #b26a3afd);
+    border-radius: 50%;
+    position: absolute;
+    top: 31%;
+    left: 3%;
+    animation: rotatevenus 12s linear infinite;
+}
+@keyframes rotatevenus{
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+     100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    } 
+} 
+/* ============================================ earth starts ========================================================== */
+.earthOrbit .name {
+    left: -40%;
+    top: -99%;
+}
+
+.earthOrbit{
+    height: 300px;
+    width: 300px;
+    animation: orbit3 38s linear infinite;
+}
+@keyframes orbit3{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+       transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.earth {
+    height: 34px;
+    width: 34px;
+    background: url(images/earth.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 63%;
+    left: 2%;
+    animation: rotateearth 10s linear infinite;
+}
+@keyframes rotateearth{
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+     100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    } 
+} 
+/* ============================================ moon starts ========================================================== */
+.moonOrbit .name {
+    font-size: 12px;
+    font-weight: 300;
+    left: 73%;
+    top: 91%;
+}
+
+.moonOrbit{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 0.8px dotted #dd9;
+    position: relative;
+    top: -20%;
+    left: -25%;
+    background: transparent;
+    animation: orbit4 15s linear infinite;
+}
+@keyframes orbit4{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+       transform: rotate(360deg);
+    }
+    
+}
+
+.moon {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: -4px 2px 56px #fff;
+    position: absolute;
+    top: 42%;
+    left: -1%;
+    animation: rotatemoon 4s linear infinite;
+}
+@keyframes rotatemoon{
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+     100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    } 
+} 
+
+/* ============================================ mars starts ========================================================== */
+.marsOrbit .name {
+    left: -29%;
+    top: -97%;
+}
+
+.marsOrbit{
+    height: 400px;
+    width: 400px;
+    animation: orbit5 40s linear infinite;
+}
+@keyframes orbit5{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+       transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.mars {
+    height: 23px;
+    width: 23px;
+    background: linear-gradient(
+      #99857a,
+      #c6785c,
+      #e27b58,
+      #ff9d6f,
+      #663926,
+      #8e6a5a
+    );
+    border-radius: 50%;
+    position: absolute;
+    top: 82%;
+    left: 11%;
+    animation: rotatemars 10s linear infinite;
+}
+@keyframes rotatemars{
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+     100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    } 
+} 
+/* ============================================ jupitar starts ========================================================== */
+.jupitarOrbit .name {
+    left: -32%;
+    top: -70%;
+    font-size: 24px;
+}
+
+.jupitarOrbit{
+    height: 500px;
+    width: 500px;
+    animation: orbit6 45s linear infinite;
+
+}
+@keyframes orbit6{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+       transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.jupitar {
+    height: 48px;
+    width: 48px;
+    background: linear-gradient(
+      #4f5444,
+      #a79c86,
+      #d2cfda,
+      #d39c7e,
+      #90614d,
+      #c88b3a
+    );
+    border-radius: 50%;
+    position: absolute;
+    top: 99%;
+    left: 55%;
+    animation: rotatejupitar 10s linear infinite;
+}
+@keyframes rotatejupitar{
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+     100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    } 
+} 
+/* ********************************************** saturn starts **********************************************8 */
+.saturnOrbit .name {
+    left: -58%;
+    top: -70%;
+    font-size: 20px;
+}
+
+.saturnOrbit{
+    height: 630px;
+    width: 630px;
+    animation: orbit7 30s linear infinite;
+}
+@keyframes orbit7{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+       transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.saturn {
+    height: 43px;
+    width: 43px;
+    background: linear-gradient(#343e47, #7b7869, #a49b72, #c5ab6e, #c3a171);
+    border-radius: 50%;
+    position: absolute;
+    top: 74%;
+    left: 94%;
+    animation: rotatesaturn 6s linear infinite;
+}
+@keyframes rotatesaturn{
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+     100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    } 
+} 
+
+.saturnRing{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 4px double rgb(244, 244, 5);
+    position: relative;
+    top: -8%;
+    left: -10%;
+    background-color: transparent;
+}
+/* ============================================ urenus starts ========================================================== */
+.urenusOrbit .name {
+    left: -31%;
+    top: -71%;
+    font-size: 22px;
+}
+
+.urenusOrbit{
+    height: 750px;
+    width: 750px;
+    animation: orbit8 40s linear infinite;
+}
+@keyframes orbit8{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+       transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.urenus {
+    height: 40px;
+    width: 40px;
+    background: linear-gradient(#d5fbfc, #bbe1e4, #93bbbe, #65868b);
+    border-radius: 50%;
+    position: absolute;
+    top: 23%;
+    left: 92%;
+    animation: rotateurenus 14s linear infinite;
+}
+@keyframes rotateurenus{
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+     100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    } 
+} 
+/* ============================================ neptune starts ========================================================== */
+.neptuneOrbit .name {
+    left: -45%;
+    top: -78%;
+    font-size: 24px;
+}
+
+.neptuneOrbit{
+    height: 850px;
+    width: 850px;
+    animation: orbit9 50s linear infinite;
+
+}
+@keyframes orbit9{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+       transform: translate(-50%, -50%) rotate(360deg);
+    } 
+}
+
+.neptune {
+    height: 38px;
+    width: 38px;
+    background: linear-gradient(#212354, #3ee4e8, #3e66f9, #6081ff, #89f3ff);
+    border-radius: 50%;
+    position: absolute;
+    top: 0%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    animation: rotateneptune 14s linear infinite;
+}
+@keyframes rotateneptune{
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+     100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    } 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

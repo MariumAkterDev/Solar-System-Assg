@@ -1,0 +1,219 @@
+section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(images/galaxy.avif);
+    /* background-repeat: no-repeat; */
+    background-size: 753px -8%;
+    background-position: center;
+    animation: backanimat 10s linear infinite;
+}
+@keyframes backanimat{
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}
+/* ====================================== Shooting Star =================================== */
+.shooting{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    box-shadow: 
+    0 0 0 6px rgb(255, 255, 255, 0.1 ) inset,
+    0 0 0 12px rgb(255, 255, 255, 0.1 ) inset,
+    0 0 0 20px rgb(255, 255, 255, 1 ) inset;
+    animation: shootingstar 3s linear infinite;
+}
+.shooting::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 1px;
+    background: linear-gradient(90deg, #fff, transparent);
+    box-shadow: 79px 0px 104px 40px rgba(117, 173, 173, 0.25);
+}
+
+@keyframes shootingstar{
+    0%{ 
+        transform: rotate(315deg) translateX(0) scale(1.8);
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{ 
+        transform: rotate(315deg) translateX(-1000px) scale(0.8);
+        opacity: 0;
+    }
+}
+.sht2 {
+    top: 0;
+    right: 0;
+    left: initial;
+    animation-delay: 0;
+    animation-duration: 1s;
+}
+.sht3 {
+    top: 0;
+    right: 20px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 1s;
+}
+.sht4 {
+    top: 80px;
+    right: 0px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+.sht5 {
+    top: 0px;
+    right: 80px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 2.5s;
+}
+.sht1 {
+    top: 0px;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 3.5s;
+}
+.sht6 {
+    top: 0px;
+    right: 600px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+.sht7 {
+    top: 300px;
+    right: 0px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+.sht8 {
+    top: 0px;
+    right: 700px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+.sht9 {
+    top: 0px;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+.sht10 {
+    top: 0px;
+    right: 450px;
+    left: initial;
+    animation-delay: 2.75s;
+    animation-duration: 2.25s;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* =================================== Shooting Dot ======================================== */
+
+.shootingDot{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    box-shadow: 
+    0 0 0 6px rgb(255, 255, 255, 0.1 ) inset,
+    0 0 0 12px rgb(255, 255, 255, 0.1 ) inset,
+    0 0 0 20px rgb(255, 255, 255, 1 ) inset;
+    animation: shootingdoooooot 4s linear infinite; 
+}
+
+@keyframes shootingdoooooot{
+    0%{ 
+        transform: rotate(300deg) translateX(0);
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{ 
+        transform: rotate(300deg) translateX(-1000px);
+        opacity: 0;
+    }
+}
+.sht11 {
+    top: 100px;
+    right: 450px;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+}
+.sht12 {
+    top: 0px;
+    right: 1000px;
+    animation-delay: 0.5s;
+    animation-duration: 4s;
+}
+.sht13 {
+    top: 2000px;
+    right: 450px;
+    animation-delay: 1.7s;
+    animation-duration: 4s;
+}
+.sht14 {
+    top: 1000px;
+    right: 700px;
+    left: initial;
+    animation-delay: 0.5s;
+    animation-duration: 4s;
+}
+.sht15 {
+    top: 70px;
+    right: 600px;
+    left: initial;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
